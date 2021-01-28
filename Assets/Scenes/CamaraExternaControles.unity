@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1819593370}
-  zoomSpeed: 2
+  zoomSpeed: 4
   panSpeed: 0.5
   orbitSpeed: 2
 --- !u!114 &1879900036
