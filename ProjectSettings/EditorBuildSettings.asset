@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Default/Scenes/samplescene.unity
-    guid: cbfe36cfddfde964d9dfce63a355d5dd
+    path: "Assets/Default/Scenes/Bot\xF3n_Pantalla_Completa.unity"
+    guid: d078af117931f0e408de5ad3aca07452
   m_configObjects: {}
