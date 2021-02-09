@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Animations.meta
 guid: 96d6d9ffe6dbce5449fca70ad8b592a6
+=======
+guid: f54d1bd14bd3ca042bd867b519fee8cc
+>>>>>>> origin/Botón_Pantalla_Completa:Assets/TextMesh Pro.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
