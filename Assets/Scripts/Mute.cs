@@ -13,7 +13,7 @@ public class Mute : MonoBehaviour
 
     public void mute()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //if (Input.GetKeyDown(KeyCode.Space))
             if (audio.mute)
                 audio.mute = false;
             else
