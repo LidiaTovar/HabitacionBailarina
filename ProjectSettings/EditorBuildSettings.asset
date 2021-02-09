@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Default/Scenes/Bot\xF3n_Pantalla_Completa.unity"
-    guid: d078af117931f0e408de5ad3aca07452
+    path: "Assets/Scenes/Habitaci\xF3n.unity"
+    guid: c256955353956c245a27d40c6db23c2f
   m_configObjects: {}
