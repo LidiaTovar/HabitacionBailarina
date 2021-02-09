@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Materials/Armario.meta
 guid: 82c86b97fec04da40b920cfa669de5be
+=======
+guid: 8e7e8f5a82a3a134e91c54efd2274ea9
+>>>>>>> origin/Botón_Mute:Assets/TextMesh Pro/Documentation.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
