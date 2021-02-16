@@ -29,7 +29,6 @@ public class botonplay : MonoBehaviour
         else
         {
             // gameObject.GetComponent<Animator>().Play("Idle");
-            gameObject.GetComponent<Animator>().speed = 1;
             animation_bool = true;
 
         }
