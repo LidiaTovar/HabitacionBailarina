@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class botonplay : MonoBehaviour
 {
-    public bool animation_bool;
+    public bool animation_bool =true;
 
     //Start is blablabla
     void Start()
@@ -21,13 +21,15 @@ public class botonplay : MonoBehaviour
     {
         if (animation_bool == true)
         {
-            gameObject.GetComponent<Animator>().Play("cubo");
+            // gameObject.GetComponent<Animator>().Play("cubo");
+            gameObject.GetComponent<Animator>().speed = 0;
             animation_bool = false;
 
         }
         else
         {
-            gameObject.GetComponent<Animator>().Play("Idle");
+            // gameObject.GetComponent<Animator>().Play("Idle");
+            gameObject.GetComponent<Animator>().speed = 1;
             animation_bool = true;
 
         }
