@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3886,7 +3886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07452f3d0ff8e04fb8f160b92608319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mainSkybox: {fileID: 0}
+  _mainSkybox: {fileID: 2100000, guid: 7b621f3d20f81af4785f8576da7910e2, type: 2}
   _skyboxes:
   - {fileID: 2100000, guid: 7b621f3d20f81af4785f8576da7910e2, type: 2}
   - {fileID: 2100000, guid: 51670671cea66614abe4af8f5e7d1e21, type: 2}
