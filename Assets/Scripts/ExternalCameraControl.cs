@@ -9,10 +9,16 @@ public class ExternalCameraControl : MonoBehaviour
     public float zoomSpeed;
     public float panSpeed;
     public float orbitSpeed;
-
+    SliderController _sliderController;
     Vector3 camaraOriginalPos;
     Quaternion camaraOriginalRotation;
-    
+
+
+    private void Awake()
+    {
+        _sliderController = FindObjectOfType<SliderController>();    
+    }
+
     void Start()
     {
         if (target != null) transform.LookAt(target);
@@ -27,18 +33,26 @@ public class ExternalCameraControl : MonoBehaviour
         float mousex = Input.GetAxis("Mouse X");
         float mousey = Input.GetAxis("Mouse Y");
 
+
         //Orbit Camera
-        if(Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))
         {
-            if (target != null) transform.RotateAround(target.position, Vector3.up, mousex * orbitSpeed);
-            if (target != null) transform.RotateAround(target.position, transform.right, -mousey * orbitSpeed);
+            if (!_sliderController.isSetting())
+            {
+                if (target != null) transform.RotateAround(target.position, Vector3.up, mousex * orbitSpeed);
+                if (target != null) transform.RotateAround(target.position, transform.right, -mousey * orbitSpeed);
+            }
         }
 
+
         //Pan Camera
-        if(Input.GetMouseButton(1) || Input.GetMouseButton(2))
+        if (!Input.GetKey(KeyCode.LeftShift))
         {
-            Vector3 movement = transform.right * -mousex * panSpeed + transform.up * -mousey * panSpeed;
-            transform.position += movement;
+            if (Input.GetMouseButton(1) || Input.GetMouseButton(2))
+            {
+                Vector3 movement = transform.right * -mousex * panSpeed + transform.up * -mousey * panSpeed;
+                transform.position += movement;
+            }
         }
 
         //Zoom Camera

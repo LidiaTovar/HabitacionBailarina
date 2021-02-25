@@ -50,4 +50,9 @@ public class SliderController : MonoBehaviour
             _botonReproduccionTx.text = "Pause";
         }
     }
+
+    public bool isSetting()
+    {
+        return _setting;
+    }
 }
