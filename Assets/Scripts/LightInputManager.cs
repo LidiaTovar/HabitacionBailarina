@@ -25,6 +25,7 @@ public class LightInputManager : MonoBehaviour
         {
             if (!savedInitialPos)
             {
+                
                 //camara = Camera.main;
                 rotacionInicial = pivot.rotation;
                 initialXPos = camara.ScreenToViewportPoint(Input.mousePosition).x;
