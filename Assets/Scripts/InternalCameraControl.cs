@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExternalCameraControl : MonoBehaviour
+public class InternalCameraControl : MonoBehaviour
 {
     public Transform target;
 
-    public float zoomSpeed;
-    public float panSpeed;
     public float orbitSpeed;
     SliderController _sliderController;
     Vector3 camaraOriginalPos;
@@ -29,7 +27,6 @@ public class ExternalCameraControl : MonoBehaviour
 
     void Update()
     {
-        float zoom = Input.GetAxis("Mouse ScrollWheel");
         float mousex = Input.GetAxis("Mouse X");
         float mousey = Input.GetAxis("Mouse Y");
 
@@ -43,21 +40,6 @@ public class ExternalCameraControl : MonoBehaviour
                 if (target != null) transform.RotateAround(target.position, transform.right, -mousey * orbitSpeed);
             }
         }
-
-
-        //Pan Camera
-        if (!Input.GetKey(KeyCode.LeftShift))
-        {
-            if (Input.GetMouseButton(1) || Input.GetMouseButton(2))
-            {
-                Vector3 movement = transform.right * -mousex * panSpeed + transform.up * -mousey * panSpeed;
-                transform.position += movement;
-            }
-        }
-
-        //Zoom Camera
-        transform.position += transform.forward * zoom * zoomSpeed;
-
     }
 
     public void ResetCamera()
