@@ -12,8 +12,16 @@ public class SliderController : MonoBehaviour
     [SerializeField] Text _botonReproduccionTx;
     bool _setting;
     bool _paused;
+    [SerializeField] Image boton;
+    [SerializeField] Sprite play;
+    [SerializeField] Sprite pause;
 
     // Update is called once per frame
+    private void Start()
+    {
+        boton.sprite = pause;
+    }
+
     void Update()
     {
         if (!_paused && !_setting)
@@ -43,11 +51,13 @@ public class SliderController : MonoBehaviour
         {
             _animator.speed = 0;
             _botonReproduccionTx.text = "Play";
+            boton.sprite = play;
         }
         else
         {
             _animator.speed = 1;
             _botonReproduccionTx.text = "Pause";
+            boton.sprite = pause;
         }
     }
 

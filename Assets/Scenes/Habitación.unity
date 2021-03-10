@@ -3283,6 +3283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8521a7e87fe9e9d4394bc454f7c215ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boton: {fileID: 1019278416}
+  unmuted: {fileID: 21300000, guid: 023385c39a9f9c941816e512d688780f, type: 3}
+  muted: {fileID: 21300000, guid: 3254e97d2689d7f45b1907281c7f7459, type: 3}
 --- !u!114 &1019278415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4192,6 +4195,9 @@ MonoBehaviour:
   _slider: {fileID: 826890067}
   _animationName: GiroBailarina
   _botonReproduccionTx: {fileID: 1237067174}
+  boton: {fileID: 1610113128}
+  play: {fileID: 21300000, guid: 0c90ce6ed14d3ec4f93c91f7bdef1adb, type: 3}
+  pause: {fileID: 21300000, guid: c72a17cc861e8c04cbaa749aaed35b3e, type: 3}
 --- !u!4 &1148442914
 Transform:
   m_ObjectHideFlags: 0
@@ -5559,7 +5565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0c90ce6ed14d3ec4f93c91f7bdef1adb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c72a17cc861e8c04cbaa749aaed35b3e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
